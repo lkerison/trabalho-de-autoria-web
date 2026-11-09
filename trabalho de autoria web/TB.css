@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 
 :root {
   --primary: #0284c7;
@@ -62,7 +62,6 @@ header h1 {
   font-weight: 600;
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
-  transition: all 0.3s ease;
 }
 
 .barra-navegacao a:hover,
@@ -109,14 +108,12 @@ img {
   margin: 1.5rem auto;
   border-radius: 12px;
   box-shadow: var(--shadow);
-  object-fit: cover;
 }
 
 
 ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   margin: 1.5rem 0;
 }
@@ -153,7 +150,6 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0;
-  overflow: hidden;
   border-radius: 12px;
   box-shadow: var(--shadow);
 }
@@ -171,18 +167,10 @@ th, td {
   text-align: left;
 }
 
-thead {
-  background-color: var(--primary);
-  color: white;
-}
-
 tbody tr {
   border-bottom: 1px solid #e2e8f0;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #f8fafc;
-}
 
 tbody tr:hover {
   background-color: #f1f5f9;
@@ -199,27 +187,10 @@ a:hover {
   color: var(--primary-dark);
 }
 
-/* FOOTER */
 footer {
   background-color: #0f172a;
   color: #94a3b8;
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
-}
-
-
-@media (max-width: 600px) {
-  header {
-    padding: 1rem;
-  }
-  
-  .barra-navegacao {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  main {
-    width: 95%;
-  }
 }
